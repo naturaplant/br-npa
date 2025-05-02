@@ -1,17 +1,7 @@
 name = "br-npa"
-type = "javascript"
-
 account_id = "df63c5a3c403032fd49c98ca37c7b87e"
 workers_dev = true
-main = "dist/_worker.js"
 compatibility_date = "2025-05-02"
+main = "dist/_worker.js"
 
-[build]
-command = "npm run build"
-upload.format = "service-worker"
-
-[site]
-bucket = "./dist"
-entry-point = "./"
-
-
+routes = ["https://naturaplant.org/*"]
